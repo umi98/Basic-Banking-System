@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Challenge Chapter 2</title>
+        <style>
+            body {
+                background-color: rgb(242, 242, 242);
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            button {
+                background-color: #119ac4;
+                border: none;
+                color: white;
+                padding: 10px 20px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 14px;
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            } 
+            button:disabled{
+                background-color: #e8e8e9;
+            }           
+            #content {
+                margin: auto;
+                background: #fff;
+                border-radius: 5px;
+                box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+                width: 90%;
+            }
+            #content #judul {
+                padding: 15px;
+                border-top-right-radius: 5px;
+                border-top-left-radius: 5px;
+                background-color: rgb(77, 77, 255);
+                color: #fff;
+            }
+            #content #judul h1 {
+                margin: 0 0 0 0;
+            }
+            #content #isi {
+                padding: 15px;
+            }
+            #tabel {
+                padding: 10px;
+            }
+            table, td, th {
+                border: 1px solid;
+            }
+            table {
+                margin-top: 20px;
+                border-collapse: collapse;
+                width: 100%;
+            }
+            table th {
+                background: black;
+                color: #fff;
+                padding: 10px 0;
+                border: 0;
+            }
+            table tr {
+                background-color: #f8f7f7;
+                padding: 7px 0;
+                border: 0;
+            }
+            table tr:nth-of-type(even) {
+                background-color: #e8e8e9;
+            }
+            table td {
+                padding: 10px;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div id = "content">
+            <div id="judul">
+                <h1>Simulasi mutasi rekening</h1>
+            </div>
+            <div id="isi">
+                <p>Saldo rekening Anda: <span id="saldo">0</span> </p>
+                <button id="btnTambah" onclick="operasi.deposit()">Tambah Saldo</button>
+                <button id="btnKurang" onclick="operasi.withdraw()">Kurangi Saldo</button>
+            </div>
+            <div id="tabel">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Tanggal</th>
+                            <th>Jenis Mutasi</th>
+                            <th>Nominal</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Ini pakai class -->
+        <script src="bank_account_class.js"></script>
+        <script src="banking_system.js"></script>
+        <script>
+            
+        </script>
+    </body>
+</html>
